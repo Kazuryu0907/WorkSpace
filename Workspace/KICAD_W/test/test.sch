@@ -1,0 +1,93 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:D D1
+U 1 1 5BF8012F
+P 5650 2200
+F 0 "D1" H 5650 2416 50  0000 C TNN
+F 1 "LED" H 5650 2325 50  0000 C CNN
+F 2 "LED_THT:LED_D4.0mm" H 5650 2200 50  0001 C CNN
+F 3 "~" H 5650 2200 50  0001 C CNN
+	1    5650 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2200 5800 2200
+$Comp
+L Device:R R1
+U 1 1 5BF803E0
+P 6050 2200
+F 0 "R1" V 5843 2200 50  0000 C CNN
+F 1 "330" V 5934 2200 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" V 5980 2200 50  0001 C CNN
+F 3 "~" H 6050 2200 50  0001 C CNN
+	1    6050 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5400 2200 5500 2200
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5BF80913
+P 7050 2300
+F 0 "#FLG0101" H 7050 2375 50  0001 C CNN
+F 1 "PWR_FLAG" H 7050 2474 50  0000 C CNN
+F 2 "" H 7050 2300 50  0001 C CNN
+F 3 "~" H 7050 2300 50  0001 C CNN
+	1    7050 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 2300 6800 2300
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5BF809E6
+P 7050 2750
+F 0 "#FLG0102" H 7050 2825 50  0001 C CNN
+F 1 "PWR_FLAG" H 7050 2924 50  0000 C CNN
+F 2 "" H 7050 2750 50  0001 C CNN
+F 3 "~" H 7050 2750 50  0001 C CNN
+	1    7050 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x01 J1
+U 1 1 5BF8C7F4
+P 6450 2400
+F 0 "J1" V 6454 2480 50  0000 L CNN
+F 1 "Conn_02x01" V 6545 2480 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_8x5.4" H 6450 2400 50  0001 C CNN
+F 3 "~" H 6450 2400 50  0001 C CNN
+	1    6450 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6200 2200 6450 2200
+Wire Wire Line
+	6800 2300 6800 2200
+Wire Wire Line
+	6800 2200 6450 2200
+Connection ~ 6450 2200
+Wire Wire Line
+	5400 2200 5400 2700
+Wire Wire Line
+	5400 2700 6450 2700
+Wire Wire Line
+	7050 2750 6450 2750
+Wire Wire Line
+	6450 2750 6450 2700
+Connection ~ 6450 2700
+$EndSCHEMATC
