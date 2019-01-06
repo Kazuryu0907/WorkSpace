@@ -80,4 +80,8 @@ void loop()
     Serial.println("done\n");
 
   delay(5000);           // wait 5 seconds for next scan
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> work/master

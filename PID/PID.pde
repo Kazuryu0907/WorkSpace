@@ -1,6 +1,7 @@
 import controlP5.*;
 ControlP5 slider;
 
+<<<<<<< HEAD
 float P, I, D;
 /*
 float Kp = 0.01;
@@ -10,6 +11,17 @@ float Kp = 0.01;
 float Kp = 0.09744175;
 float Ki = 0.009331203;
 float Kd = 0.09252518;//0.01
+=======
+float P,I,D;
+/*
+float Kp = 0.01;
+float Ki = 0.0001;
+float Kd = 0.01;//0.01
+*/
+float Kp = 0.075252794;
+float Ki = 0.00002153516;
+float Kd = 0.09024362;//0.01
+>>>>>>> work/master
 
 float mV = 1000;
 float nV = 0;
@@ -49,6 +61,7 @@ void draw() {
   print(",");
   println(D/1000);
   //Serial.println(mV);
+<<<<<<< HEAD
   text("P:", 530, 495);
   text(P/1000, 610, 495);
   text("I:", 530, 520);
@@ -57,6 +70,14 @@ void draw() {
   text(D/1000, 610, 545);
   text("V:", 730, 520);
   text(nV, 850, 520);
+=======
+  text("P:",530,495);
+  text(P/1000,610,495);
+  text("I:",530,520);
+  text(I/1000,610,520);
+  text("D:",530,545);
+  text(D/1000,610,545);
+>>>>>>> work/master
   delay(10);
 }
 class graphMonitor {
